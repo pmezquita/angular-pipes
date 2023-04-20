@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pipesApp';
+
+  nombre: string = 'pedRo meZquiTa';
+  valor: number = 1000;
+  obj = {
+    nombre: 'Pedro'
+  }
+
+  mostrarNombre = () => {
+    console.log(this.nombre);
+    console.log(this.valor);
+    console.log(this.obj);
+  };
 }
