@@ -10,7 +10,7 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'pipesApp';
 
-  nombre: string = 'pedRo meZquiTa';
+  nombre: string = 'pedRo méZquiTa';
   valor: number = 1000;
   obj = {
     nombre: 'Pedro'

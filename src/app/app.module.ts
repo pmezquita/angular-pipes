@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
-import {ButtonModule} from "primeng/button";
-import {CardModule} from "primeng/card";
+import {AppComponent} from './app.component';
+import {PrimengModule} from "./primeng/primeng.module";
 
 @NgModule({
   declarations: [
@@ -11,10 +10,10 @@ import {CardModule} from "primeng/card";
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
-    CardModule,
+    PrimengModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
