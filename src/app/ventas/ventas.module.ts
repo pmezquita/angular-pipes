@@ -4,6 +4,7 @@ import { NumerosComponent } from './pages/numeros/numeros.component';
 import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
+import {PrimengModule} from "../primeng/primeng.module";
 
 
 
@@ -14,9 +15,10 @@ import { OrdenarComponent } from './pages/ordenar/ordenar.component';
     BasicosComponent,
     OrdenarComponent
   ],
-  imports: [
-    CommonModule
-  ],
+    imports: [
+        CommonModule,
+        PrimengModule
+    ],
   exports: [
     NumerosComponent,
     NoComunesComponent,
