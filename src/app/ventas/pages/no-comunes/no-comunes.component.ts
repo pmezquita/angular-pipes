@@ -18,6 +18,12 @@ export class NoComunesComponent {
     }
   ];
 
+  persona = {
+    nombre: 'Pedro',
+    edad: 31,
+    direccion: 'México, Campeche'
+  }
+
   isMasculino: boolean = true;
 
   // i18nSelect
