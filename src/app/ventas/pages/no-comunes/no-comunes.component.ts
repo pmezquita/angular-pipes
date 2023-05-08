@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {interval, Observable} from "rxjs";
 
 @Component({
   selector: 'app-no-comunes',
@@ -23,6 +24,14 @@ export class NoComunesComponent {
     edad: 31,
     direccion: 'México, Campeche'
   }
+
+  myObservabkeTimer: Observable<number> = interval(1000);
+
+  promiseValue: Promise<string> = new Promise((resolve) => {
+    setTimeout(()=>{
+      resolve('Tenemos data en la promesa.')
+    }, 3000)
+  });
 
   isMasculino: boolean = true;
 
