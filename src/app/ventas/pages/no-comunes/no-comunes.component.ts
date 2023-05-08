@@ -7,20 +7,47 @@ import {Component} from '@angular/core';
 })
 export class NoComunesComponent {
 
+  private personas = [
+    {
+      nombre: 'Pedro',
+      genero: 'masculino'
+    },
+    {
+      nombre: 'Maria',
+      genero: 'femenino'
+    }
+  ];
+
+  isMasculino: boolean = true;
+
   // i18nSelect
-  nombre: string = 'Pedro';
-  genero: string = 'masculino';
+  get nombre() {
+    return this.personas[(this.isMasculino ? 0 : 1)].nombre;
+  }
+
+  get genero() {
+    return this.personas[(this.isMasculino ? 0 : 1)].genero;
+  }
+
   invitacionMap = {
     'masculino': 'invitarlo',
     'femenino': 'invitarla',
   }
 
   // i18nPlural
-  clientes: string[] = ['Maria', 'Pedro', 'Juan'];
+  clientes: string[] = ['Maria', 'Pedro', 'Hernando', 'Eduardo', 'Fernando'];
   clientesMap = {
     '=0': 'no tenemos ningún cliente esperando',
     '=1': 'tenemos un cliente esperando',
     'other': 'tenemos # clientes esperando'
+  }
+
+  cambiarCliente = () => {
+    this.isMasculino = !this.isMasculino;
+  }
+
+  borrarCliente = () => {
+    this.clientes.shift();
   }
 
 }
