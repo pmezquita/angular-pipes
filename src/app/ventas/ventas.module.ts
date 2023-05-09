@@ -5,6 +5,7 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import {PrimengModule} from "../primeng/primeng.module";
+import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 
 
 
@@ -14,6 +15,7 @@ import {PrimengModule} from "../primeng/primeng.module";
     NoComunesComponent,
     BasicosComponent,
     OrdenarComponent,
+    ToggleCasePipe,
   ],
     imports: [
         CommonModule,
