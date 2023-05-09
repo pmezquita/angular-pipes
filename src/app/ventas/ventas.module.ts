@@ -13,7 +13,7 @@ import {PrimengModule} from "../primeng/primeng.module";
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrdenarComponent,
   ],
     imports: [
         CommonModule,

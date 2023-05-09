@@ -24,7 +24,7 @@ const routes: Routes = [
     component: NumerosComponent
   },
   {
-    path: 'ordenar',
+    path: 'custom',
     component: OrdenarComponent
   },
   {
