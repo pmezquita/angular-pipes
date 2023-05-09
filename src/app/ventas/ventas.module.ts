@@ -7,6 +7,7 @@ import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import {PrimengModule} from "../primeng/primeng.module";
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 
@@ -18,6 +19,7 @@ import { CanFlyPipe } from './pipes/can-fly.pipe';
     OrdenarComponent,
     ToggleCasePipe,
     CanFlyPipe,
+    SortByPipe,
   ],
     imports: [
         CommonModule,
