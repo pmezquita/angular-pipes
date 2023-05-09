@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Color, Hero} from "../../interfaces/hero.interface";
+import {Color, Hero, sortByType} from "../../interfaces/hero.interface";
 
 @Component({
   selector: 'productos-ordenar',
@@ -8,6 +8,7 @@ import {Color, Hero} from "../../interfaces/hero.interface";
 })
 export class OrdenarComponent {
   isUpperCase: boolean = false;
+  sortBy: sortByType = '';
   heroes: Hero[] = [
     {
       name: 'Superman',
@@ -38,5 +39,9 @@ export class OrdenarComponent {
 
   toggleUperCase() {
     this.isUpperCase = !this.isUpperCase;
+  }
+
+  changeOrder(value: sortByType){
+    this.sortBy = value;
   }
 }
