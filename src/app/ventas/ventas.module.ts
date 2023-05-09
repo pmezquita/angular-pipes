@@ -6,6 +6,7 @@ import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 import {PrimengModule} from "../primeng/primeng.module";
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
 
 
 
@@ -16,6 +17,7 @@ import { ToggleCasePipe } from './pipes/toggle-case.pipe';
     BasicosComponent,
     OrdenarComponent,
     ToggleCasePipe,
+    CanFlyPipe,
   ],
     imports: [
         CommonModule,
